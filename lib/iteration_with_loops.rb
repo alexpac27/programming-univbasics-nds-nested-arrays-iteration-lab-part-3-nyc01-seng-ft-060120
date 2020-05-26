@@ -3,7 +3,7 @@ array = [
   ["my",5,"friend"]
 ]
 
-p array.join(" ") #=> "1 hello 2 my 5 friend"
+#p array.join(" ") #=> "1 hello 2 my 5 friend"
 
 
 def join_nested_strings(array)
@@ -25,3 +25,5 @@ def join_nested_strings(array)
   end
   string_array.join(" ")
 end
+
+join_nested_strings(array)
