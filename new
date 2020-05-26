@@ -1,0 +1,16 @@
+array = [
+  [1,"hello",2],
+  ["my",5,"friend"]
+]
+
+#p array.join(" ")
+
+def method(array)
+  if array[0][1].class == String
+  return true
+  else
+  return false
+  end
+end
+
+method(array)

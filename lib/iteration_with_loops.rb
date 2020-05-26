@@ -1,4 +1,27 @@
-def join_nested_strings(src)
-  # src will be an Array of Arrays of Strings and Integers
-  # Combine all Strings present in the AoA into a single value and return it
+array = [
+  [1,"hello",2],
+  ["my",5,"friend"]
+]
+
+p array.join(" ") #=> "1 hello 2 my 5 friend"
+
+
+def join_nested_strings(array)
+  string_array = []
+  count = 0
+  while count < array.length do
+
+    inner_count = 0
+    while inner_count < array[count].length do
+      if array[count][inner_count].class == String
+        string_array << array[count][inner_count]
+      else
+        string_array = string_array
+      end
+      inner_count += 1
+
+    end
+    count += 1
+  end
+  string_array.join(" ")
 end
