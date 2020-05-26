@@ -26,4 +26,4 @@ def join_nested_strings(array)
   string_array.join(" ")
 end
 
-join_nested_strings(array)
+p join_nested_strings(array)
