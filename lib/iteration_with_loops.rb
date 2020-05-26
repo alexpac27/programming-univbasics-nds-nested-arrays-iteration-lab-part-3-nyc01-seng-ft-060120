@@ -13,7 +13,7 @@ def join_nested_strings(array)
 
     inner_count = 0
     while inner_count < array[count].length do
-      if array[count][inner_count].is_a?(String)
+      if array[count][inner_count].class == String
         string_array << array[count][inner_count]
       else
         string_array = string_array
