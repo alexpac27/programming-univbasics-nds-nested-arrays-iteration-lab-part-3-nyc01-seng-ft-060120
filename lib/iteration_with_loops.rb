@@ -23,7 +23,7 @@ def join_nested_strings(array)
     end
     count += 1
   end
-  string_array.join(" ")
+  p string_array.join(" ")
 end
 
-p join_nested_strings(array)
+join_nested_strings(array)
